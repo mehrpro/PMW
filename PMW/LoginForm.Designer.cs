@@ -29,20 +29,26 @@ namespace PMW
         /// </summary>
         private void InitializeComponent()
         {
+            this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
             this.SuspendLayout();
             // 
             // LoginForm
             // 
+            this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 337);
+            this.ClientSize = new System.Drawing.Size(531, 331);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.Name = "LoginForm";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private DevExpress.XtraBars.FormAssistant formAssistant1;
     }
 }
 

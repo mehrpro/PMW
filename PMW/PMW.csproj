@@ -36,6 +36,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=aafb20a8e8c4d2cc" />
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=aafb20a8e8c4d2cc" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.10.0, Culture=neutral, PublicKeyToken=aafb20a8e8c4d2cc" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=aafb20a8e8c4d2cc" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=aafb20a8e8c4d2cc" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=aafb20a8e8c4d2cc" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=aafb20a8e8c4d2cc" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=aafb20a8e8c4d2cc" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=aafb20a8e8c4d2cc" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -60,6 +69,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDbContext.cs" />
+    <Compile Include="AppForm\MachineryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppForm\MachineryForm.Designer.cs">
+      <DependentUpon>MachineryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppForm\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppForm\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppForm\NewMachinery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppForm\NewMachinery.Designer.cs">
+      <DependentUpon>NewMachinery.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Machinery.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="LoginForm.cs">
@@ -70,6 +97,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AppForm\MachineryForm.resx">
+      <DependentUpon>MachineryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppForm\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppForm\NewMachinery.resx">
+      <DependentUpon>NewMachinery.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,7 +133,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="PublicClass\" />
     <Folder Include="Services\" />
   </ItemGroup>

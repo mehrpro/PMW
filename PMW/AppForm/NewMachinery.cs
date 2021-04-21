@@ -7,20 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 
-namespace PMW
+namespace PMW.AppForm
 {
-    public partial class LoginForm : XtraForm
+    public partial class NewMachinery : Form
     {
-        public LoginForm()
+        public NewMachinery()
         {
             InitializeComponent();
-        }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
