@@ -454,7 +454,7 @@ namespace PMW.AppForm
             // 
             this.textEdit6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textEdit6.EditValue = "شرکت کیمیای زنجان گستران";
-            this.textEdit6.Location = new System.Drawing.Point(556, 155);
+            this.textEdit6.Location = new System.Drawing.Point(537, 155);
             this.textEdit6.Name = "textEdit6";
             this.textEdit6.Parmida_ActivePlusMultiKeys = false;
             this.textEdit6.Properties.Appearance.TextOptions.RightToLeftFixed = System.Windows.Forms.RightToLeft.No;
@@ -470,7 +470,7 @@ namespace PMW.AppForm
             "شرکت اسپیرال",
             "شرکت آیرما"});
             this.textEdit6.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.textEdit6.Size = new System.Drawing.Size(170, 20);
+            this.textEdit6.Size = new System.Drawing.Size(189, 20);
             this.textEdit6.TabIndex = 7;
             // 
             // ElectricalEnrgyTab
